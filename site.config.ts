@@ -53,12 +53,37 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: '카테고리',
-      pageId: '36400db511474331b5c1de6918212469',
+      title: '废话集',
+      pageId: 'c348401bdd5f4b1d951654f14ae16ae9',
     },
     {
-      title: '카테고리',
-      pageId: '36400db511474331b5c1de6918212469',
+      title: '书单',
+      pageId: '10f1cc1541124841aa5fdeccaa83782c',
+      menuPage: true,
+    },
+    {
+      title: '片单',
+      pageId: '5fe8e8734712467899f539cf7f5f6faf',
+      menuPage: true,
+    },
+    {
+      title: '照片',
+      pageId: 'b959adb427fe426da843e9013e682ddd',
+      menuPage: true,
+    },
+    {
+      title: '归档',
+      pageId: '74b8534d1365499e8abf30b195aaed31',
+      menuPage: true,
+    },
+    {
+      title: '留言',
+      pageId: 'b90aa6f8013742c9a37e3fe396a92932',
+      menuPage: true,
+    },
+    {
+      title: '关于',
+      pageId: '5a8e5c19c85646058d2bad8dbc13308e',
       menuPage: true,
     },
   ],
@@ -66,7 +91,7 @@ export default siteConfig({
   // -------- custom configs (2skydev) -------------
 
   // date-fns format string
-  dateformat: 'yyyy년 MM월 dd일',
+  dateformat: 'yyyy年 MM月 dd日',
 
   // post page - hidden properties
   hiddenPostProperties: ['설명', '상태', '최하위 정렬'],
