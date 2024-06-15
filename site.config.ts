@@ -10,15 +10,15 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'wiley blog',
-  domain: 'blog.wileyzhang.com',
+  domain: 'wileyzhang.com',
   author: 'wiley',
 
   // open graph metadata (optional)
-  description: '2skydev blog - developer blog',
+  description: 'wiley blog - AI/LLM developer blog',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
-  github: '2skydev',
+  // github: '2skydev',
   // linkedin: 'fisch2',
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
