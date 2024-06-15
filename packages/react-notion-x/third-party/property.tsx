@@ -100,9 +100,9 @@ export const PropertyImpl: React.FC<IPropertyProps> = props => {
     () =>
       function FormulaTitle() {
         if (block && linkToTitlePage) {
-          console.log(block.id);
+          console.log(mapPageUrl);
           return (
-            <components.PageLink className={cs('notion-page-link')} href={mapPageUrl(block.id)}>
+            <components.PageLink className={cs('notion-page-link')} href={(block.id)}>
               <PageTitle block={block} />
             </components.PageLink>
           );
