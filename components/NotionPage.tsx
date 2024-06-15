@@ -216,12 +216,12 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const socialImage = mapImageUrl(
     getPageProperty<string>('Social Image', block, recordMap) ||
-      (block as PageBlock).format?.page_cover ||
-      config.defaultPageCover,
+    (block as PageBlock).format?.page_cover ||
+    config.defaultPageCover,
     block,
   );
 
-  const socialDescription = getPageProperty<string>('설명', block, recordMap) || config.description;
+  const socialDescription = getPageProperty<string>('Description', block, recordMap) || config.description;
 
   const isIndexPage = pageId === site.rootNotionPageId;
 
