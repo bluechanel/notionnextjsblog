@@ -152,8 +152,6 @@ function Table({ blockIds = [], collection, collectionView, width, padding }) {
                       // style.width = `${100.0 / properties.length}%`
                     }
 
-                    console.log(block);
-
                     return (
                       <div
                         key={p.property}
