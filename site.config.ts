@@ -9,9 +9,9 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: '2skydev blog',
-  domain: 'blog.2skydev.com',
-  author: '2skydev',
+  name: 'wiley blog',
+  domain: 'blog.wileyzhang.com',
+  author: 'wiley',
 
   // open graph metadata (optional)
   description: '2skydev blog - developer blog',
@@ -22,11 +22,9 @@ export default siteConfig({
   // linkedin: 'fisch2',
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
-
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
-  defaultPageIcon:
-    'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F0d2daa37-61d0-45b6-b333-9a2bd0bdc3ee%2Fprofile_%25E1%2584%2580%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AA%25E1%2584%258C%25E1%2585%25B5%25E1%2586%25AF_circle.png?table=block&id=d1e89e9e-42eb-4ebf-9486-ae0374039efc&spaceId=2eb5336b-2edb-42d0-bc6c-95d72d4d1b74&width=250&userId=bef10e95-202b-4b6b-9626-7af866b6f9ba&cache=v2',
+  defaultPageIcon: 'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F0d2daa37-61d0-45b6-b333-9a2bd0bdc3ee%2Fprofile_%25E1%2584%2580%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AA%25E1%2584%258C%25E1%2585%25B5%25E1%2586%25AF_circle.png?table=block&id=d1e89e9e-42eb-4ebf-9486-ae0374039efc&spaceId=2eb5336b-2edb-42d0-bc6c-95d72d4d1b74&width=250&userId=bef10e95-202b-4b6b-9626-7af866b6f9ba&cache=v2',
   defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
@@ -83,13 +81,11 @@ export default siteConfig({
   ],
 
   // -------- custom configs (2skydev) -------------
-
   // date-fns format string
-  dateformat: 'yyyy年 MM月 dd日',
+  dateformat: 'yyyy/MM/dd',
 
   // post page - hidden properties
-  // hiddenPostProperties: ['설명', '상태', '최하위 정렬'],
-
+  hiddenPostProperties: [],
   // contentPosition (table of contents) text align
   contentPositionTextAlign: 'left',
 

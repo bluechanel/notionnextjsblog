@@ -61,7 +61,7 @@ const Comments = ({ pageId, recordMap }: CommentsProps) => {
 
   return (
     <div className="notion-comments">
-      <h2 className="notion-h notion-h1">댓글</h2>
+      <h2 className="notion-h notion-h1">评论</h2>
 
       <form className={cs('item', loading && 'loading')} onSubmit={formik.handleSubmit}>
         <img className="profileImage guest" src="/comment.png" alt="guest" />
@@ -71,7 +71,7 @@ const Comments = ({ pageId, recordMap }: CommentsProps) => {
             <div className="bg" />
             <textarea
               name="content"
-              placeholder={`안녕하세요 👋\n이곳에 댓글 내용을 작성해주세요.`}
+              placeholder={`嗨 👋\n请在这里发表您的评论。`}
               rows={6}
               value={formik.values.content}
               onChange={formik.handleChange}
