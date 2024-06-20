@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "sitemap.xml": {
+      "memory": 500,
+      "maxDuration": 60
+    }
+  }
+}
