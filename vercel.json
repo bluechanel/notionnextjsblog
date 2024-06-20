@@ -1,6 +1,6 @@
 {
   "functions": {
-    "sitemap.xml": {
+    "/sitemap.xml ": {
       "memory": 500,
       "maxDuration": 60
     }
