@@ -4,7 +4,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import cs from 'classnames';
 import { formatDistance } from 'date-fns';
-import ko from 'date-fns/locale/ko';
+import zhCN from 'date-fns/locale/zh-CN';
 import { useFormik } from 'formik';
 import useSWR from 'swr';
 
@@ -44,17 +44,17 @@ const Comments = ({ pageId, recordMap }: CommentsProps) => {
   const comments = (data?.results || []).map(item => {
     const user = recordMap.notion_user[item.created_by.id]?.value || {
       id: 'guest',
-      name: '익명',
+      name: '匿名',
       profile_photo: '/comment.png',
     };
 
     return {
       id: item.id,
       user: user,
-      text: item?.rich_text?.[0]?.plain_text || '내용을 불러올 수 없습니다.',
+      text: item?.rich_text?.[0]?.plain_text || '无法显示内容.',
       isOwner: user?.id !== 'guest',
       createdAt: formatDistance(new Date(), new Date(item.created_time), {
-        locale: ko,
+        locale: zhCN,
       }),
     };
   });
@@ -122,7 +122,7 @@ const Comments = ({ pageId, recordMap }: CommentsProps) => {
                   {item.user.name}
                 </div>
 
-                <div className="createdAt">{item.createdAt}전</div>
+                <div className="createdAt">{item.createdAt}前</div>
               </div>
             </div>
           </div>
