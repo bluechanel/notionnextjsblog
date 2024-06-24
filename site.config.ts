@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'wiley',
 
   // open graph metadata (optional)
-  description: 'wiley blog - AI/LLM developer blog Prompt, FastChat, Vllm, Docker, Langchain, Langgraph, Airflow, RAG',
+  description: 'wiley blog - AI/LLM developer blog Prompt, FastChat, Vllm, Docker, Langchain, Langgraph, Airflow, RAG, Notion',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
