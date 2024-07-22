@@ -71,8 +71,8 @@ export class NotionAPI {
     const pageBlockId = Object.keys(recordMap.block)[0];
     const pageBlock = recordMap.block[pageBlockId].value;
     const authorId = pageBlock.created_by_id;
-    const users = await this.getUsers([authorId]);
-    const author = users.results[0];
+    // const users = await this.getUsers([authorId]);
+    const author = authorId ? (await this.getUsers([authorId])).results[0] : null;
 
     recordMap.notion_user = {
       [authorId]: author,
@@ -387,15 +387,15 @@ export class NotionAPI {
           const iteratorProps =
             iterator === 'results'
               ? {
-                  type: iterator,
-                  limit,
-                }
+                type: iterator,
+                limit,
+              }
               : {
-                  type: 'aggregation',
-                  aggregation: {
-                    aggregator: 'count',
-                  },
-                };
+                type: 'aggregation',
+                aggregation: {
+                  aggregator: 'count',
+                },
+              };
 
           const isUncategorizedValue = typeof value === 'undefined';
           const isDateValue = value?.range;
@@ -403,8 +403,8 @@ export class NotionAPI {
           const queryLabel = isUncategorizedValue
             ? 'uncategorized'
             : isDateValue
-            ? value.range?.start_date || value.range?.end_date
-            : value?.value || value;
+              ? value.range?.start_date || value.range?.end_date
+              : value?.value || value;
 
           const queryValue = !isUncategorizedValue && (isDateValue || value?.value || value);
 

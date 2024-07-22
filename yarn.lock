@@ -229,10 +229,10 @@
     "@types/node-fetch" "^2.5.10"
     node-fetch "^2.6.1"
 
-"@notionhq/client@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@notionhq/client/-/client-2.2.0.tgz#2255d9547f4d84aeadd3cb2ce49f3145e3c93d52"
-  integrity sha512-wJwGajJjdy3GDI5HpomulhYuxo5j8t1Conm9HkpHqkHnj4qrc+6N//qRXrogsUU2sn60kSHpRcPB4P6L0799tg==
+"@notionhq/client@^2.2.15":
+  version "2.2.15"
+  resolved "https://registry.npmmirror.com/@notionhq/client/-/client-2.2.15.tgz#739fc8edb1357a2e2e35d026571fafe17c089606"
+  integrity sha512-XhdSY/4B1D34tSco/GION+23GMjaS9S2zszcqYkMHo8RcWInymF6L1x+Gk7EmHdrSxNFva2WM8orhC4BwQCwgw==
   dependencies:
     "@types/node-fetch" "^2.5.10"
     node-fetch "^2.6.1"
