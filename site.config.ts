@@ -76,7 +76,7 @@ export default siteConfig({
     },
     {
       title: '友链',
-      pageId: '161605eee8898098b5bae38545a549e7',
+      pageId: '162605eee889808ba66fc360c6b7564d',
     },
     {
       title: '关于',
