@@ -51,8 +51,8 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: '废话集',
-      pageId: 'c348401bdd5f4b1d951654f14ae16ae9',
+      title: '收藏夹',
+      pageId: '161605eee889806484a0d1e962d53174',
     },
     {
       title: '书单',
@@ -73,6 +73,10 @@ export default siteConfig({
     {
       title: '留言',
       pageId: 'b90aa6f8013742c9a37e3fe396a92932',
+    },
+    {
+      title: '友链',
+      pageId: '161605eee8898098b5bae38545a549e7',
     },
     {
       title: '关于',
